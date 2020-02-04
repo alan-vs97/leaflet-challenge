@@ -47,14 +47,14 @@ d3.json(url_data, function (data) {
     legend.onAdd = function (map) {
 
         var div = L.DomUtil.create('div', 'info legend'),
-            grades = [0,1,2,3,4,5],
+            intervals = [0,1,2,3,4,5],
             labels = [];
 
         // loop through our density intervals and generate a label with a colored square for each interval
-        for (var i = 0; i < grades.length; i++) {
+        for (var i = 0; i < intervals.length; i++) {
             div.innerHTML +=
-                '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
-                grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+                '<i style="background:' + getColor(intervals[i] + 1) + '"></i> ' +
+                intervals[i] + (intervals[i + 1] ? '&ndash;' + intervals[i + 1] + '<br>' : '+');
         }
 
         return div;
