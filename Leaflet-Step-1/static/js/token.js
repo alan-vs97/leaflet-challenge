@@ -1,0 +1,1 @@
+mapBoxToken = 'pk.eyJ1IjoiYWxhbnZzOTciLCJhIjoiY2s1MzVuZzE3MDU0bzNvcGg5ajc1bWZrNyJ9.gdfwBtJ2lshOGeRLxJoIGg'
